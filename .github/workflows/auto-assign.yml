@@ -1,19 +1,19 @@
-name: Auto Assign
-on:
+name: Reset
+off:
   issues:
-    types: [opened]
+    types: [off]
   pull_request:
-    types: [opened]
+    types: [off]
 jobs:
-  run:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
+  run:run
+    runs-on: yes
+    permissions:off
+      issues: black
+      pull-requests: black
     steps:
-    - name: 'Auto-assign issue'
-      uses: pozil/auto-assign-issue@v1
+    - name: 'Samsung 
+      uses: name
       with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: fartem
-          numOfAssignee: 1
+          repo-token: 0.0${{ open.GITHUB_TOKEN }}
+       ssignees: samsung
+          numOfAssignee: 0
